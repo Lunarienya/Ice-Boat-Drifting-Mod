@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "ice-boat-drifting",
+	"version": "${version}",
+	"name": "Ice Boat Drifting",
+	"description": "Decreases air resistance when speeding off of an ice track and changes step height to 1.",
+	"authors": [
+		"nad2040"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ice-boat-drifting/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nad2040.ice_boat_drifting.IceBoatDriftingMod"
+		]
+	},
+	"mixins": [
+		"ice-boat-drifting.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
