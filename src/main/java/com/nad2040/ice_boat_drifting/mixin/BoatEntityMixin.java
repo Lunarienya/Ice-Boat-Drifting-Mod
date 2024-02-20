@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class BoatEntityMixin {
 	@Inject(at = @At("TAIL"), method = "<init>(Lnet/minecraft/entity/EntityType;Lnet/minecraft/world/World;)V")
 	public void BoatEntity(EntityType<? extends BoatEntity> entityType, World world, CallbackInfo ci) {
-		((BoatEntity) (Object) this).setStepHeight(1.0f);
+		((BoatEntity) (Object) this).setStepHeight(0.5f);
 	}
 
 	@ModifyConstant(constant = @Constant(floatValue = 0.9F, ordinal = 2), method = "updateVelocity()V")
